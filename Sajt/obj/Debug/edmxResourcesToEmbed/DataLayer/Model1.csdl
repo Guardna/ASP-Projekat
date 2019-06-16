@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="restoranbazaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="admin">
+    <Key>
+      <PropertyRef Name="idadmin" />
+    </Key>
+    <Property Name="idadmin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kor_ime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lozinka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="korisnici">
+    <Key>
+      <PropertyRef Name="idkorisnik" />
+    </Key>
+    <Property Name="idkorisnik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prezime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="menu">
+    <Key>
+      <PropertyRef Name="idmenu" />
+    </Key>
+    <Property Name="idmenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="opis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cena" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="poll">
+    <Key>
+      <PropertyRef Name="idpoll" />
+    </Key>
+    <Property Name="idpoll" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="glasovi" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rezervacija">
+    <Key>
+      <PropertyRef Name="idrez" />
+    </Key>
+    <Property Name="idrez" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="datum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="vreme" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="slike">
+    <Key>
+      <PropertyRef Name="idslika" />
+    </Key>
+    <Property Name="idslika" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="putanja" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="restoranbazaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="admins" EntityType="Self.admin" />
+    <EntitySet Name="korisnicis" EntityType="Self.korisnici" />
+    <EntitySet Name="menus" EntityType="Self.menu" />
+    <EntitySet Name="polls" EntityType="Self.poll" />
+    <EntitySet Name="rezervacijas" EntityType="Self.rezervacija" />
+    <EntitySet Name="slikes" EntityType="Self.slike" />
+    <FunctionImport Name="KorisnikDelete">
+      <Parameter Name="idkorisnik" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="KorisnikInsert">
+      <Parameter Name="ime" Mode="In" Type="String" />
+      <Parameter Name="prezime" Mode="In" Type="String" />
+      <Parameter Name="mail" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="KorisnikUpdate">
+      <Parameter Name="idkorisnik" Mode="In" Type="Int32" />
+      <Parameter Name="ime" Mode="In" Type="String" />
+      <Parameter Name="prezime" Mode="In" Type="String" />
+      <Parameter Name="mail" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="MenuDelete">
+      <Parameter Name="idmenu" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="MenuInsert">
+      <Parameter Name="naziv" Mode="In" Type="String" />
+      <Parameter Name="opis" Mode="In" Type="String" />
+      <Parameter Name="cena" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="MenuUpdate">
+      <Parameter Name="idmenu" Mode="In" Type="Int32" />
+      <Parameter Name="naziv" Mode="In" Type="String" />
+      <Parameter Name="opis" Mode="In" Type="String" />
+      <Parameter Name="cena" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PollDelete">
+      <Parameter Name="idpoll" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PollInsert">
+      <Parameter Name="naziv" Mode="In" Type="String" />
+      <Parameter Name="glasovi" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PollUpdate">
+      <Parameter Name="idpoll" Mode="In" Type="Int32" />
+      <Parameter Name="naziv" Mode="In" Type="String" />
+      <Parameter Name="glasovi" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PollUpdateVotes">
+      <Parameter Name="idpoll" Mode="In" Type="Int32" />
+      <Parameter Name="naziv" Mode="In" Type="String" />
+      <Parameter Name="glasovi" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="RezervacijaDelete">
+      <Parameter Name="idrez" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="RezervacijaInsert">
+      <Parameter Name="ime" Mode="In" Type="String" />
+      <Parameter Name="telefon" Mode="In" Type="String" />
+      <Parameter Name="datum" Mode="In" Type="String" />
+      <Parameter Name="vreme" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="RezervacijaUpdate">
+      <Parameter Name="idrez" Mode="In" Type="Int32" />
+      <Parameter Name="ime" Mode="In" Type="String" />
+      <Parameter Name="telefon" Mode="In" Type="String" />
+      <Parameter Name="datum" Mode="In" Type="String" />
+      <Parameter Name="vreme" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SlikaDelete">
+      <Parameter Name="idslika" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SlikaInsert">
+      <Parameter Name="naziv" Mode="In" Type="String" />
+      <Parameter Name="putanja" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SlikaUpdate">
+      <Parameter Name="idslika" Mode="In" Type="Int32" />
+      <Parameter Name="naziv" Mode="In" Type="String" />
+      <Parameter Name="putanja" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
