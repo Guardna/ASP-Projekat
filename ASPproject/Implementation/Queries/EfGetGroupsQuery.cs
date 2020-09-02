@@ -3,6 +3,7 @@ using Application.Queries;
 using Application.Searches;
 using AutoMapper;
 using DataAccess;
+using Domain;
 using Implementation.Extensions;
 using System;
 using System.Collections.Generic;
@@ -35,7 +36,7 @@ namespace Implementation.Queries
                 query = query.Where(x => x.Name.ToLower().Contains(search.Name.ToLower()));
             }
 
-            return query.Paged<GroupDto, Domain.Group>(search, _mapper);
+            return query.Paged<GroupDto, Group>(search, _mapper);
         }
     }
 }

@@ -3,6 +3,7 @@ using Application.DataTransfer;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Domain;
 
 namespace Implementation.Profiles
 {
@@ -10,7 +11,7 @@ namespace Implementation.Profiles
     {
         public GroupProfile()
         {
-            CreateMap<Domain.Group, GroupDto>();
+            CreateMap<Group, GroupDto>();
         }
     }
 }

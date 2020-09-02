@@ -23,7 +23,7 @@ namespace Implementation.Queries
         }
 
 
-        public int Id => 4;
+        public int Id => 3;
 
         public string Name => "Log search.";
 
@@ -31,23 +31,23 @@ namespace Implementation.Queries
         {
             var query = context.UseCaseLogs.AsQueryable();
 
-            if (!string.IsNullOrEmpty(search.Actor) || !string.IsNullOrWhiteSpace(search.Actor))
+            if (!String.IsNullOrEmpty(search.Actor) || !String.IsNullOrWhiteSpace(search.Actor))
             {
                 query = query.Where(x => x.Actor.ToLower().Contains(search.Actor.ToLower()));
             }
 
-            if (!string.IsNullOrEmpty(search.UseCaseName) || !string.IsNullOrWhiteSpace(search.UseCaseName))
+            if (!String.IsNullOrEmpty(search.UseCaseName) || !String.IsNullOrWhiteSpace(search.UseCaseName))
             {
                 query = query.Where(x => x.UseCaseName.ToLower().Contains(search.UseCaseName.ToLower()));
             }
 
-            if (search.DateFrom != DateTime.MinValue)
+            if (search.DateFrom.HasValue && search.DateFrom != DateTime.MinValue)
             {
-                query = query.Where(x => x.Date>=search.DateFrom.Date);
+                query = query.Where(x => x.Date>=search.DateFrom);
             }
-            if (search.DateTo != DateTime.MinValue && search.DateTo >= search.DateFrom)
+            if (search.DateTo.HasValue && search.DateTo != DateTime.MinValue && search.DateTo >= search.DateFrom)
             {
-                query = query.Where(x => x.Date <= search.DateTo.Date);
+                query = query.Where(x => x.Date <= search.DateTo);
             }
 
             return query.Paged<UseCaseLogDto, Domain.UseCaseLog>(search, _mapper);

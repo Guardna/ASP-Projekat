@@ -8,17 +8,17 @@ namespace ProjekatASP.Core
 {
     public class FakeApiActor : IApplicationActor
     {
-        public int Id => 1;
+        public int Id => 2;
 
         public string Identity => "Test Api User";
 
-        public IEnumerable<int> AllowedUseCases => new List<int> { 1 };
+        public IEnumerable<int> AllowedUseCases => new List<int> {5};
 
     }
 
     public class AdminFakeApiActor : IApplicationActor
     {
-        public int Id => 2;
+        public int Id => 1;
 
         public string Identity => "Fake Admin";
 

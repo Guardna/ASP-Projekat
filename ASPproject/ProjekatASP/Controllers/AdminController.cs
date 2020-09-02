@@ -43,6 +43,13 @@ namespace ProjekatASP.Controllers
         {
             return "value";
         }
+        [HttpDelete("{id}", Name = "DeleteUser")]
+        public IActionResult Delete(int id, [FromServices] IDeleteUserCommand command)
+        {
+            executor.ExecuteCommand(command, id);
+            return NoContent();
+        }
+
 
     }
 }

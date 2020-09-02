@@ -1,9 +1,13 @@
-﻿using Application.Commands;
+﻿using Application;
+using Application.Commands;
 using Application.DataTransfer;
 using DataAccess;
 using Domain;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http;
 using System.Text;
 
 namespace Implementation.Commands
@@ -12,10 +16,11 @@ namespace Implementation.Commands
     {
 
         private readonly ProjekatContext _context;
-
-        public EfPostCommand(ProjekatContext context)
+        private readonly IApplicationActor _actor;
+        public EfPostCommand(ProjekatContext context, IApplicationActor actor)
         {
             _context = context;
+            _actor = actor;
         }
 
         public int Id => 4;
@@ -24,16 +29,28 @@ namespace Implementation.Commands
 
         public void Execute(PostDto request)
         {
+
             var post = new Post
             {
-                Name = request.Name
+                Name = request.Name,
+                UserId = _actor.Id,
+                GroupId = request.GroupId,
+                Description = request.Description
             };
 
-            _context.Posts.Add(post);
+            var pp=_context.Posts.Add(post);
 
+            pp.Context.SaveChanges();
+
+            _context.Photos.Add(new Photo
+            {
+                PostId = pp.Entity.Id,
+                Name = request.ImageName,
+                Path=request.Path
+            });
             _context.SaveChanges();
-
         }
+   
 
     }
 }

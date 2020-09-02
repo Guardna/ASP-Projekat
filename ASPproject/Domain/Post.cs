@@ -6,7 +6,6 @@ namespace Domain
 {
     public class Post : Entity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public int UserId { get; set; }
         public int GroupId { get; set; }

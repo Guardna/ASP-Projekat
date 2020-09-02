@@ -18,7 +18,7 @@ namespace Implementation.Commands
             _context = context;
         }
 
-        public int Id => 4;
+        public int Id => 3;
 
         public string Name => "Create New Group";
 

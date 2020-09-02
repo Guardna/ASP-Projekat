@@ -17,7 +17,7 @@ namespace Implementation.Commands
             this._context = context;
         }
 
-        public int Id => 3;
+        public int Id => 4;
 
         public string Name => "Deleting Post";
 

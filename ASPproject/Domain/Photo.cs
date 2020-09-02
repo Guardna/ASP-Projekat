@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Domain
@@ -12,6 +13,5 @@ namespace Domain
         public int PostId { get; set; }
         public virtual Post Post { get; set; }
 
-    
     }
 }

@@ -13,6 +13,10 @@ using Implementation.Validators;
 using Application.DataTransfer;
 using Application.Commands;
 using Application;
+using Application.Queries;
+using Application.Searches;
+using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,11 +32,6 @@ namespace ProjekatASP.Controllers
         private readonly UseCaseExecutor _executor;
 
 
-        public PostController()
-        {
-            _context = new ProjekatContext();
-        }
-
         public PostController(IMapper mapper, CreatePostValidator validator, ProjekatContext context, UseCaseExecutor executor)
         {
             _context =context;
@@ -43,27 +42,20 @@ namespace ProjekatASP.Controllers
 
         // GET: api/<GroupController>
         [HttpGet]
-        public IActionResult Get([FromQuery] SearchDto dto)
+        public IActionResult Get(
+            [FromQuery] PostSearch search,
+            [FromServices] IGetPostsQuery query)
         {
             try
             {
-    
-                var postQuery = _context.Posts.AsQueryable();
-
-                if (dto.Name != null)
-                {
-                    postQuery = postQuery.Where(p => p.Name.ToLower().Contains(dto.Name.ToLower()));
-                }
-
-                var response = _mapper.Map<List<PostDto>>(postQuery.ToList());
-
-                return Ok(response);
+                return Ok(_executor.ExecuteQuery(query, search));
             }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
+
 
         // GET api/<GroupController>/5
         [HttpGet("{id}", Name = "GetPosts")]
@@ -80,6 +72,7 @@ namespace ProjekatASP.Controllers
 
             return Ok(_mapper.Map<PostDto>(post));
         }
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] PostDto dto, [FromServices] UpdatePostValidator validator)
         {
@@ -114,14 +107,30 @@ namespace ProjekatASP.Controllers
         }
 
         // POST api/<GroupController>
+        [Authorize]
         [HttpPost]
         public void Post(
-            [FromBody] PostDto dto,
+            [FromForm] PostDto dto,
             [FromServices] IPostCommand command)
         {
+            var guid = Guid.NewGuid();
+            var extension = Path.GetExtension(dto.Image.FileName);
+
+            var newFileName = guid + extension;
+
+            var path = Path.Combine("wwwroot", "images", newFileName);
+
+            dto.Path = path;
+            dto.ImageName = newFileName;
+
+            using (var fileStream = new FileStream(path, FileMode.Create))
+            {
+                dto.Image.CopyTo(fileStream);
+            }
+
             _executor.ExecuteCommand(command, dto);
         }
-
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeletePostCommand command)
         {

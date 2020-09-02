@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UploadController : ControllerBase

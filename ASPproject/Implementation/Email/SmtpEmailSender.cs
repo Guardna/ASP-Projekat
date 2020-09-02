@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 
-namespace Nedelja7.Implementation.Email
+namespace Implementation.Email
 {
     public class SmtpEmailSender : IEmailSender
     {

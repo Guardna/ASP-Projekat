@@ -12,7 +12,7 @@ namespace Implementation.Commands
 {
     public class EfRegisterUserCommand : IRegisterUserCommand
     {
-        public int Id => 4;
+        public int Id => 5;
 
         public string Name => "User Registration";
 
@@ -43,12 +43,12 @@ namespace Implementation.Commands
             _context.UserUserCase.Add(new Domain.UserUserCase
             {
                 UserId = kor.Entity.Id,
-                UseCaseId = 1
+                UseCaseId = 4
             });
             _context.UserUserCase.Add(new Domain.UserUserCase
             {
                 UserId = kor.Entity.Id,
-                UseCaseId = 4
+                UseCaseId = 5
             });
 
             _context.SaveChanges();

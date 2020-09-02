@@ -11,26 +11,7 @@ namespace DataAccess
     {
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            var users = new List<User>
-            {
-                new User
-                {
-                    Id = 1,
-                    Email="admin",
-                    FirstName="Neko",
-                    LastName = "Neki",
-                    Password = "Neki"
-                },
-                new User
-                {
-                    Id = 2,
-                    Email="drugi",
-                    FirstName="Drugi",
-                    LastName = "Drugi",
-                    Password = "Drugi"
-                }
-            };
-            modelBuilder.Entity<User>().HasData(users);
+
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new PostConfiguration());
             modelBuilder.ApplyConfiguration(new CommentConfiguration());

@@ -8,5 +8,6 @@ namespace Application.Commands
     public interface IPostCommand : ICommand<PostDto>
     {
     }
+
 }
 

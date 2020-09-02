@@ -94,13 +94,6 @@ namespace ProjekatASP.Controllers
             }
         }
 
-        // DELETE api/<GroupController>/5
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id, [FromServices] IDeleteUserCommand command)
-        {
-            executor.ExecuteCommand(command, id);
-            return NoContent();
-        }
-
+     
     }
 }

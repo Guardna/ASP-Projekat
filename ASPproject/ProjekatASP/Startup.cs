@@ -24,7 +24,7 @@ using System.Text;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Application.Email;
-using Nedelja7.Implementation.Email;
+using Implementation.Email;
 using Microsoft.OpenApi.Models;
 using AutoMapper;
 
@@ -53,6 +53,7 @@ namespace ProjekatASP.Api
             services.AddJwt(appSettings);
             services.AddTransient<IEmailSender, SmtpEmailSender>(x => new SmtpEmailSender(appSettings.EmailFrom, appSettings.EmailPassword));
             services.AddControllers();
+            services.AddAutoMapper(typeof(EfGetPostsQuery).Assembly);
             services.AddAutoMapper(typeof(EfGetGroupsQuery).Assembly);
             services.AddAutoMapper(typeof(EfGetUsersQuery).Assembly);
             services.AddAutoMapper(typeof(EfGetAdminQuery).Assembly);

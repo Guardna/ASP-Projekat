@@ -11,7 +11,7 @@ namespace DataAccess.Configurations
     {
         public void Configure(EntityTypeBuilder<Photo> builder)
         {
-            builder.Property(x => x.Name).HasMaxLength(30);
+            builder.Property(x => x.Name).HasMaxLength(100);
             builder.HasIndex(x => x.Name).IsUnique();
             builder.Property(x => x.Name).IsRequired();
 

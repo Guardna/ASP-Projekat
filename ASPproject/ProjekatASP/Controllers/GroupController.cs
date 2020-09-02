@@ -14,16 +14,16 @@ using Application.Searches;
 
 namespace ProjekatASP.Controllers
 {
-    [Authorize]
+    
     [Route("api/[controller]")]
     [ApiController]
-    public class GroupsController : ControllerBase
+    public class GroupController : ControllerBase
     {
 
         private readonly IApplicationActor actor;
         private readonly UseCaseExecutor executor;
 
-        public GroupsController(IApplicationActor actor, UseCaseExecutor executor)
+        public GroupController(IApplicationActor actor, UseCaseExecutor executor)
         {
             this.actor = actor;
             this.executor = executor;

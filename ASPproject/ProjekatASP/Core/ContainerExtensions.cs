@@ -25,16 +25,17 @@ namespace ProjekatASP.Core
             services.AddTransient<IGetGroupsQuery, EfGetGroupsQuery>();
             services.AddTransient<IGetUsersQuery, EfGetUsersQuery>();
             services.AddTransient<IGetAdminQuery, EfGetAdminQuery>();
+            services.AddTransient<IGetPostsQuery, EfGetPostsQuery>();
             services.AddTransient<IRegisterUserCommand, EfRegisterUserCommand>();
             services.AddTransient<ICreateGroupCommand, EfCreateGroupCommand>();
             services.AddTransient<IDeleteGroupCommand, EfDeleteGroupCommand>();
             services.AddTransient<IDeletePostCommand, EfDeletePostCommand>();
             services.AddTransient<IDeleteUserCommand, EfDeleteUserCommand>();
             services.AddTransient<IPostCommand, EfPostCommand>();
+            services.AddTransient<IPostComment, EfCommentCommand>();
             services.AddTransient<UseCaseExecutor>();
             services.AddTransient<CreatePostValidator>();
             services.AddTransient<UpdatePostValidator>();
-            services.AddTransient<CreateUserValidator>();
             services.AddTransient<UpdateUserValidator>();
             services.AddTransient<CreatePhotoValidator>();
             services.AddTransient<UpdatePhotoValidator>();
