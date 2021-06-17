@@ -1,6 +1,5 @@
 C:\Users\Guardna\source\repos\ASPproject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
 C:\Users\Guardna\source\repos\ASPproject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
-C:\Users\Guardna\source\repos\ASPproject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csprojAssemblyReference.cache
 C:\Users\Guardna\source\repos\ASPproject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
 C:\Users\Guardna\source\repos\ASPproject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
 C:\Users\Guardna\source\repos\ASPproject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.json
@@ -13,3 +12,4 @@ C:\Users\Guardna\source\repos\ASPproject\DataAccess\obj\Debug\netcoreapp3.1\Data
 C:\Users\Guardna\source\repos\ASPproject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
 C:\Users\Guardna\source\repos\ASPproject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
 C:\Users\Guardna\source\repos\ASPproject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Guardna\source\repos\ASPproject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.AssemblyReference.cache

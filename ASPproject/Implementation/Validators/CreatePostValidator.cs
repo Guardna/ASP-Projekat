@@ -9,15 +9,15 @@ using System.Text;
 
 namespace Implementation.Validators
 {
-    public class CreateGroupValidator : AbstractValidator<GroupDto>
+    public class CreatePostValidator : AbstractValidator<PostDto>
     {
 
-        public CreateGroupValidator(ProjekatContext context)
+        public CreatePostValidator(ProjekatContext context)
         {
             RuleFor(x => x.Name)
                 .NotEmpty()
-                .Must(name => !context.Groups.Any(g => g.Name == name))
-                .WithMessage("Group name must be unique"); 
+                .Must(name => !context.Posts.Any(g => g.Name == name))
+                .WithMessage("Post name must be unique"); 
         }
     }
 }

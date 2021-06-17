@@ -37,7 +37,7 @@ namespace ProjekatASP.Controllers
             this.executor = executor;
         }
 
-        // POST api/<GroupController>
+      
 
         [HttpPost]
         public void Post([FromBody] CommentDto dto,
@@ -49,7 +49,7 @@ namespace ProjekatASP.Controllers
         }
 
 
-        // DELETE api/<GroupController>/5
+     
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -69,7 +69,7 @@ namespace ProjekatASP.Controllers
                 _context.SaveChanges();
                 return NoContent();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }

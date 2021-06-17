@@ -20,6 +20,8 @@ namespace DataAccess.Configurations
             builder.Property(x => x.FirstName).IsRequired().HasMaxLength(30);
             builder.Property(x => x.LastName).IsRequired().HasMaxLength(30);
 
+            builder.HasMany(k => k.Comments).WithOne(j => j.User).HasForeignKey(j => j.UserId).OnDelete(DeleteBehavior.Restrict);
+
             builder.HasMany(u => u.Posts).WithOne(o => o.User).HasForeignKey(o => o.UserId).OnDelete(DeleteBehavior.Restrict);
   
         }

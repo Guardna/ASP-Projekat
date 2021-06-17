@@ -4,6 +4,7 @@ using DataAccess;
 using Domain;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Implementation.Commands
@@ -24,12 +25,15 @@ namespace Implementation.Commands
         public void Execute(int request)
         {
             var post = _context.Posts.Find(request);
+            var pid = _context.Photos.Where(x => x.PostId.Equals(request));
+            var poto = pid.First();
 
             if (post == null)
             {
                 throw new EntityNotFoundException(request, typeof(Post));
             }
 
+            _context.Photos.Remove(poto);
             _context.Posts.Remove(post);
 
             _context.SaveChanges();
