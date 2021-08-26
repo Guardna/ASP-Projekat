@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guardna\\source\\repos\\ASPproject\\ProjekatASP\\ProjekatASP.csproj": {}
+    "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\ProjekatASP\\ProjekatASP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Application\\Application.csproj": {
+    "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Guardna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guardna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj"
+              "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Guardna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guardna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj"
+              "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj"
               }
             }
           }
@@ -168,14 +168,14 @@
         }
       }
     },
-    "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj": {
+    "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Guardna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guardna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -222,14 +222,14 @@
         }
       }
     },
-    "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Implementation\\Implementation.csproj": {
+    "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Implementation\\Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Implementation\\Implementation.csproj",
+        "projectUniqueName": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Implementation\\Implementation.csproj",
         "projectName": "Implementation",
-        "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Implementation\\Implementation.csproj",
+        "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Implementation\\Implementation.csproj",
         "packagesPath": "C:\\Users\\Guardna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Implementation\\obj\\",
+        "outputPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guardna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -246,11 +246,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Application\\Application.csproj"
+              "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Application\\Application.csproj"
               },
-              "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -283,14 +283,14 @@
         }
       }
     },
-    "C:\\Users\\Guardna\\source\\repos\\ASPproject\\ProjekatASP\\ProjekatASP.csproj": {
+    "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\ProjekatASP\\ProjekatASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\ProjekatASP\\ProjekatASP.csproj",
+        "projectUniqueName": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\ProjekatASP\\ProjekatASP.csproj",
         "projectName": "ProjekatASP",
-        "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\ProjekatASP\\ProjekatASP.csproj",
+        "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\ProjekatASP\\ProjekatASP.csproj",
         "packagesPath": "C:\\Users\\Guardna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\ProjekatASP\\obj\\",
+        "outputPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\ProjekatASP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guardna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -307,17 +307,17 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Application\\Application.csproj"
+              "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Application\\Application.csproj"
               },
-              "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj"
+              "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Implementation\\Implementation.csproj": {
-                "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Implementation\\Implementation.csproj"
+              "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Implementation\\Implementation.csproj": {
+                "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Implementation\\Implementation.csproj"
               }
             }
           }

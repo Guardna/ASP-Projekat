@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AE8Xy4T/YDDoOZE43qfmMTYDd7IYrttS7LnKZAxxgKJ+NkzRCems7Z+5FmcvIbVdcqUihlynZ1XMJ2Qqx1xvhQ==",
+  "dgSpecHash": "q/RTkPKtQrZm69puYNSLZNIj2QtqiZe/e/d1Eovaq9lX/SIfbc0T52ENqUWm+fmYQZVUMjkHaJHkkbizQWB9WQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\ProjekatASP\\ProjekatASP.csproj",
+  "projectFilePath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\ProjekatASP\\ProjekatASP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guardna\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Guardna\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

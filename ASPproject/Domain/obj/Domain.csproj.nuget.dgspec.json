@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj": {
+    "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Guardna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guardna\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xkCf0TM8RljJUj2rf7SzdnuGYvOYmQhuheQiRl3nBsIDFrL6T0QF3ZieaU3rjMsxMq5c7by/LpqfqDnulVLfog==",
+  "dgSpecHash": "EN9BL2bbWkisDriINHwMYsVYmqjoKfeX83gu2/MNgDs2vzVCGPQ+poq3ftqLRiZP/GARVHxFBvvNJLPzQi7HaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Implementation\\Implementation.csproj",
+  "projectFilePath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Implementation\\Implementation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guardna\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Guardna\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

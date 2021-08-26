@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q3JdnDAxPnY5rXXKhuQOCiEEBPoWsXRZHMyHvsgLD8NnUHhxIhGrlTS9PLfuBn7gDMvqV6g6lmXU+UtIZVCZaw==",
+  "dgSpecHash": "74A8IzuzWn/sfDq9D3Y+l3fovyEBApLvHFPmJANUwIgUlcLe0i94y2IlYqCH++GdRV9uLdWozs4t6pCrjkHKSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guardna\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Guardna\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

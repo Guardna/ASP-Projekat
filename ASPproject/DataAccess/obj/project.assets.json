@@ -6212,11 +6212,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Guardna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Guardna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6233,8 +6233,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Guardna\\source\\repos\\ASPproject\\Domain\\Domain.csproj"
+            "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Guardna\\Documents\\GitHub\\ASP-Projekat\\ASPproject\\Domain\\Domain.csproj"
             }
           }
         }
