@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "6VTj7h8GY7ZDcfIYOcy/j+H7tO/Ufi5BLUFMBcd0KIhDN/8cReIMlbHRBPDD5ge8yBDPL4vZCULDrQJYYme/ZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Guardna\\Desktop\\ASP-Projekat-master\\ASPproject\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Guardna\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.7\\microsoft.aspnetcore.http.features.3.1.7.nupkg.sha512",
+    "C:\\Users\\Guardna\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.7\\microsoft.extensions.primitives.3.1.7.nupkg.sha512",
+    "C:\\Users\\Guardna\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Guardna\\.nuget\\packages\\system.io.pipelines\\4.7.1\\system.io.pipelines.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Guardna\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Guardna\\.nuget\\packages"
+    ]
+  }
+}
